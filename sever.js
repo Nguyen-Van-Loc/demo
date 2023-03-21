@@ -25,7 +25,7 @@ var storage = multer.diskStorage({
         let newFileName = '';
         for (let i = 0; i < arr.length; i++) {
             if (i != arr.length - 1) {
-                newFileName += arr[i];//
+                newFileName += arr[i];
             } else {
                 newFileName += ('-' + Date.now()+'.'+arr[i]);
             }
